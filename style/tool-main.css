@@ -1,0 +1,22 @@
+  
+body {
+	background-color: #202020;
+	padding: 10px;
+}
+
+h1 {
+  font-size: 18pt;
+  font-family: "Comic Sans MS", "Comic Sans";
+  color: #d2e809;
+}
+
+p {
+	font-family: "Comic Sans MS", "Comic Sans";
+	color: #ccc;
+	font-size: 14pt;
+}
+
+a {
+	text-decoration: none;
+	color: #ccc
+}

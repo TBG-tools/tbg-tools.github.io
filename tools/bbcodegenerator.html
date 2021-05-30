@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BBcode generator</title>
+<link rel="icon" href="https://raw.githubusercontent.com/Byron-Inc/TBG/main/favico.ico" type="image/ico">
+<style>
+body {
+  font-family: "trebuchet ms", Verdana, Helvetica, Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<iframe src="https://byron-inc.github.io/TBG/misc/topbar" width="1500" height="70" frameBorder="0"></iframe>
+<h1>BBcode for TBGs generator</h1>
+<p>A simple tool that allows you to generate BBcode for TBGs. This also has more buttons.</p>
+
+<textarea id="text" name="w3review" rows="6" cols="60">
+Write your text here...</textarea>
+<br />
+<input type="button" value="Bold" id="bold" /> <input type="button" value="Italic" id="italic" /> <input type="button" value="Underlined" id="underlined" /> <input type="button" value="Strike-through" id="strike" /> <input type="button" value="Deleted" id="deleted" /> <input type="button" value="Inserted" id="insert" /> <br> <input type="button" value="Emphasised" id="emphasised" /> <input type="button" value="Color" id="color" /> <input type="button" value="Heading" id="heading" /> <input type="button" value="Link" id="link" /> <input type="button" value="Email" id="email" /> <input type="button" value="Image" id="image" /> <input type="button" value="Quote" id="quote" /> <br> <input type="button" value="Code" id="code" /> <input type="button" value="Bulleted list" id="listbullet" /> <input type="button" value="Numbered list" id="listnumber" /> <input type="button" value="Letter list" id="listletters" /> <input type="button" value="List item" id="itemlist" />
+<script type="text/javascript">
+document.getElementById("bold").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[b]Your bold text here[/b]';
+});
+
+document.getElementById("italic").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[i]Your italic text here[/i]';
+});
+
+document.getElementById("underlined").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[u]Your underlined text here[/u]';
+});
+
+document.getElementById("strike").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[s]Your strike-through text here[/s]';
+});
+
+document.getElementById("deleted").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[del]Your deleted text here[/del]';
+});
+
+document.getElementById("insert").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[ins]Your inserted text here[/ins]';
+});
+
+document.getElementById("emphasised").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[em]Your emphasised text here[/em]';
+});
+
+document.getElementById("color").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[color=yourcolorhexcodehere]Text you want to color goes here[/color]';
+});
+
+document.getElementById("heading").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[h]Your heading text here[/h]';
+});
+
+document.getElementById("link").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[url=linkurl]Text you want to place the link here[/url]';
+});
+
+document.getElementById("email").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[email=vaildemailhere]Text you want to place the email here[/email]';
+});
+
+document.getElementById("image").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[img]Direct link to the image here[/img]';
+});
+
+document.getElementById("quote").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[quote=persontoquote]Your quote text here[/url]';
+});
+
+document.getElementById("code").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[code]Your code text here[/code]';
+});
+
+document.getElementById("listbullet").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[list][/list]';
+});
+
+document.getElementById("listnumber").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[list=1][/list]';
+});
+
+document.getElementById("listletters").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[list=a][/list]';
+});
+
+document.getElementById("itemlist").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += '[*][/*]';
+});
+</script>
+<p><span style="font-size: 11px;">Tool made by JackyBorderCollie.</span></p>
+</body>
+</html>
